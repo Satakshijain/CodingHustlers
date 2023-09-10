@@ -1,0 +1,157 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+/*===== Colores =====*/
+:root{
+    --first-color: #16213e;
+    --second-color: #1a1a2e;
+    --third-color: #0f3460;
+    --fourth-color: #e94560;
+  }
+
+/* Navbar*/ 
+a{
+    text-decoration:none !important; 
+
+}
+
+.h2{
+    background-color: var(-);
+}
+.nav{
+    
+    margin-right: 10rem;
+    font-family: cursive;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    padding-top: 2px;
+    z-index: 1;
+    background-color: var(--fourth-color);
+    box-shadow: 0 1px 4px rgba(146,161,176,.15);
+
+    
+}
+.nav-item{
+    margin-bottom: var(--mb-4);
+    font-size: larger;
+    
+    
+}
+.nav-link{
+    
+    color: #fff !important ; 
+
+}
+.nav-link:hover, .nav-link:active{
+    color: #0a0909 !important;
+}
+/* box Sections*/ 
+.container{
+    margin-top: .2rem;
+    max-height: max-content;
+    max-width: fit-content;
+    margin-bottom:0%;
+}
+.title{
+    top: 0%;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:beige;
+    margin-top: 50%;
+    margin-bottom: 114%;
+    margin-left: 2rem;
+    
+    text-align: left;
+
+}
+.row{
+    top: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+ 
+
+
+}
+
+.first{
+    background-color:var(--first-color);
+    height: 100%;
+}
+.second{
+    background-color:var(--second-color);
+    height: 100%;
+}
+.third{
+    background-color: var(--third-color);
+    height: 100%;
+}
+.title_text{
+    margin-top: 5rem;
+    font-family: cursive;
+    font-size: larger;
+}
+
+.img{
+    margin-top: 5rem;
+    align-items: center;
+    
+}
+
+/* content of boxes Info*/
+.info_title{
+    margin-top: 10rem;
+    text-align: left;
+    position: relative;
+    margin-left: 5rem;
+}
+.info{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    
+   
+}
+.info__title{
+    color: #e94560;
+}
+.info__text{
+    color:var(--third-color);
+}
+ .h2{
+     color: #e94560;
+ }
+
+
+.p{
+    font-size: 10rem;
+}
+
+/* ===== FOOTER =====*/
+.footer{
+    background-color: var(--fourth-color);
+    color: #fff;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+  }
+  .footer__title{
+    font-size: 2rem;
+    margin-bottom: var(--mb-4);
+  }
+  .footer__social{
+    margin-bottom: var(--mb-4);
+  }
+  .footer__icon{
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 var(--mb-2)
+  }
+  
