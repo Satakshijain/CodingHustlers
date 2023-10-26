@@ -200,4 +200,26 @@ body{
     color: #fff;
     margin: 0 var(--mb-2)
   }
-  
+  .socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.fa-github:hover{
+  color : #000000;
+}
+.fa-linkedin-square:hover{
+  color : rgb(0, 119, 181);
+}
