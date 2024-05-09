@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-body{
-    margin: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-}
 
 /*===== Colores =====*/
 :root{
@@ -18,44 +21,48 @@ body{
   }
 
 /* Navbar*/ 
-.nav-link{
-    
-    color: #fff !important ; 
-
-}
-.nav-link:hover, .nav-link:active{
-    color: #0a0909 !important;
-}
-.nav{
-    
-    margin-top: 0;
-    margin-right: 10rem;
-    font-family: cursive;
+.header{
+    position:fixed;
+    top:0;
+    left: 0;
     width: 100%;
-    position: fixed;
-    top: 0%;
-    padding-top: 2px;
-    z-index: 1;
-    background-color: var(--fourth-color);
-    box-shadow: 0 1px 4px rgba(146,161,176,.15);
-
-    
-}
-.nav-item{
-    margin-bottom: .1rem;
-    font-size: larger;
-    margin-top: .1rem;
-
-    
-    
+    padding: 5px 50px;
+    background:#e94560;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 .logo{
-    color: #fff !important;
-    margin-right: 60rem;
-    margin-bottom: 5rem;
-    font-size: larger;
-    margin-top: 0rem;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 0px;
 }
+.navbar a{
+    position: relative;
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before{
+    content:'' ;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background:#000000;
+    transition: .3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+
+}
+
 /* box Sections*/ 
 .container{
     margin-top: .2rem;
