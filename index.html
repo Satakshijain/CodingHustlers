@@ -35,8 +35,25 @@
         <li class="nav-item">
             <a class="nav-link" href="https://github.com/Satakshijain/CodingHustlers">Contibute</a>
         </li>
+        <li>
+            <div class="switch">Dark mode:
+                <span class="inner-switch">OFF</span>
+            </div>
+        </li>
 
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $( ".inner-switch" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+              $( "body" ).removeClass( "dark" );
+              $( ".inner-switch" ).text( "OFF" );
+            } else {
+              $( "body" ).addClass( "dark" );
+              $( ".inner-switch" ).text( "ON" );
+            }
+        });
+    </script>
     <!---=====Cover======--
     <div id="carouselExampleSlidesOnly" class="carousel-slide" data-bs-ride="carousel">
         <div class="carousel-inner">
