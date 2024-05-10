@@ -11,6 +11,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assests/style.css">
     <link rel="stylesheet" href="try.css">
     <title>CodePlan</title>
@@ -18,25 +19,23 @@
 
 <body>
     <!---=====Navbar======-->
-
-    <section class="nav justify-content-end ">
-        <li class="nav-item">
-            <div class="nav-link"></div>
-            <a class="logo" href="index.html">Coding Hustlers</a>
-        </li>
-
-
-        <li class="nav-item">
-            <a class="nav-link " href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact US</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="https://github.com/Satakshijain/CodingHustlers">Contibute</a>
-        </li>
-
-    </section>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-2.5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full mt-2.5" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl mt-2.5">Coding Hustlers</span>
+          </a>
+          <nav class="md:ml-auto flex gap-2.5 flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900"  href="index.html">Coding Hustlers</a>
+            <a class="mr-5 hover:text-gray-900"  href="index.html">Home</a>
+            <a class="mr-5 hover:text-gray-900"  href="#contact">Contect US</a>
+            <a class="mr-5 hover:text-gray-900" href="https://github.com/Satakshijain/CodingHustlers">Contribute</a>
+          </nav>
+          
+        </div>
+      </header>
     <!---=====Cover======--
     <div id="carouselExampleSlidesOnly" class="carousel-slide" data-bs-ride="carousel">
         <div class="carousel-inner">
