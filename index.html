@@ -11,6 +11,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <link rel="stylesheet" href="assests/style.css">
     <link rel="stylesheet" href="try.css">
     <title>CodePlan</title>
@@ -231,26 +236,49 @@
             </section>
 
 
+            <!-- quote -->
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+                      <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                    </svg>
+                    <p class="leading-relaxed text-lg">“Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.”</p>
+                    <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
+                    <p class="text-gray-500">Senior Product Designer</p>
+                  </div>
+                </div>
+              </section>
+            
+
             <!---=====Footer======-->
-            <footer class="footer">
-                <p class="footer__title">"Programming isn't about what you know; it's about what you can figure out.”
-                    <br> -
-                    Chris Pine
-                </p>
-
-                <p>&#169; 2023 copyright all right reserved</p>
-                 <ul class="socials">
-
-            <li><a href="https://github.com/Satakshijain/CodingHustlers" aria-label="Follow me on Github" title="Github (External Link)"
-                rel="noopener noreferrer" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-
-
-            <li><a href="https://www.linkedin.com/in/satakshi-jain-6b9306203" aria-label="Follow me on Linkedin"
-                title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank"><i
-                  class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-
-          </ul>
-            </footer>
+            <!-- component -->
+            <footer class="text-gray-600 body-font">
+                <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                  <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full mt-4" viewBox="0 0 24 24">
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-xl mt-4">Coding Hustlers</span>
+                  </a>
+                  <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 CodingHustlers —
+                    <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@CodingHustlers</a>
+                  </p>
+                  <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                   
+                    <a class="ml-3 text-gray-500 href="https://github.com/Satakshijain/CodingHustlers"">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/satakshi-jain-6b9306203">
+                      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </footer>
             <!-- Optional JavaScript; choose one of the two! -->
 
             <!-- Option 1: Bootstrap Bundle with Popper -->
