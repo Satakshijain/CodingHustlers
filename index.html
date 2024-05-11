@@ -13,14 +13,23 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="assests/style.css">
     <link rel="stylesheet" href="try.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Galada&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Workbench&display=swap" rel="stylesheet">
     <title>CodePlan</title>
 </head>
-
-<body>
+<style>
+    .logo {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
+<body id="NAV">
     <!---=====Navbar======-->
 
-    <section class="nav justify-content-end ">
-        <li class="nav-item">
+    <section class="navbar ">
+        <!-- <li class="nav-item">
             <div class="nav-link"></div>
             <a class="logo" href="index.html">Coding Hustlers</a>
         </li>
@@ -34,9 +43,62 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="https://github.com/Satakshijain/CodingHustlers">Contibute</a>
-        </li>
-
+        </li> -->
+        <div class="logo">
+            <a href="#NAV" style="color: red; font-size:larger; font-weight:600; ">Coding Hustlers</a>
+        </div>
+        <div class="center-content">
+            <a href="index.html" style="color: #fff; margin-right:15px;">Home</a>
+            <a href="#contact" style="color: #fff; margin-right:15px;">Contact-US</a>
+            <a href="https://github.com/Satakshijain/CodingHustlers" style="color: #fff; ">Contibute</a>
+        </div>
+        <div class="mode">
+            <div class="switch">Dark mode:
+                <button class="inner-switch">OFF</button>
+            </div>
+        </div>
+        <div class="mobile-container">
+            <div class="topnav">
+                <a href="#NAV" style="color: red; font-size:larger; font-weight:600; " class="active">Coding Hustlers</a>
+                <div id="myLinks">
+                    <a href="index.html" style="color: #fff; margin-right:15px;">Home</a>
+                    <a href="#contact" style="color: #fff; margin-right:15px;">Contact US</a>
+                    <a href="https://github.com/Satakshijain/CodingHustlers" style="color: #fff; ">Contribute</a>
+                    <div class="switch">Dark mode:
+                        <button class="inner-switch">OFF</button>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(".inner-switch").on("click", function() {
+            if ($("body").hasClass("dark")) {
+                $("body").removeClass("dark");
+                $(".inner-switch").text("OFF").removeClass("dark-mode-on");
+            } else {
+                $("body").addClass("dark");
+                $(".inner-switch").text("ON").addClass("dark-mode-on");
+            }
+        });
+        
+    </script>
+
     <!---=====Cover======--
     <div id="carouselExampleSlidesOnly" class="carousel-slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -57,15 +119,24 @@
 
 
     <!---=====Three boxes======-->
-    <div class="container-fluid main"
-        style="background-image: url(img/background.jpg); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; image-rendering: optimizeQuality;">
-
+    <div class="container-fluid main image-media"">
+        <style>
+            .image-media {
+                background-image: url(img/background.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                image-rendering: optimizeQuality;
+                border-bottom-right-radius: 2.523rem;
+                border-bottom-left-radius: 2.523rem;
+            }
+        </style>
 
 
         <div class="row">
 
             <div class="col">
-                <div class="title">
+                <div class="title title-box">
 
                     <h1 class="button"> </a> Coding Hustlers </a></h1>
                     <p>Start your coding career with Coding Hustlers,
@@ -78,7 +149,7 @@
             </div>
 
             <div class="col">
-                <div class="title">
+                <div class="title title-box">
 
                     <h1 class="button"> </a> Basic Programming </a></h1>
                 </div>
@@ -87,13 +158,13 @@
 
 
             <div class="col ">
-                <div class="title">
+                <div class="title title-box">
                     <h1 class="button">Competitive Programming</h1>
                 </div>
             </div>
 
             <div class="col ">
-                <div class="title">
+                <div class="title title-box">
                     <h1 class="button">Open Source and fellowship</h1>
                 </div>
             </div>
@@ -107,10 +178,10 @@
 
 
     <!---=====Section-1(Studies)======-->
-    <div class="container-sm-fluid">
-        <div class="row">
+    <div class="container-sm-fluid" >
+        <div class="row container-1">
             <div class="col-4 first">
-                <div class="title">
+                <div class="title title-media">
                     <h1> Basic Programming </h1>
                     <h2 class="title_text"> <i> First, solve the problem. Then, write the code.” </i> <br> – John
                         Johnson</h2>
@@ -121,8 +192,17 @@
                 <div class="info">
                     </h1>
                     <div class="media">
-                        <img class="align-self-center mr-5 mp-5" src="img/basicprogram.png"
-                            alt="Generic placeholder image">
+                        <div class="image">
+                            <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/c++.webp"
+                            alt="c++">
+                            <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/java.jpeg"
+                            alt="Java">
+                            <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/javascript.jpeg"
+                            alt="javascript">
+                            <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/python.png"
+                            alt="python">
+                        </div>
+                        
                         <div class="media-body">
                             <h1 class="mt-0 mp-5">Basic Programming </h1>
                             <p> Which is the best language
@@ -139,18 +219,29 @@
 
             </div>
         </div>
+        <hr class="line">
 
 
         <!---=====Section-2(OS & FS)======-->
         <div class="container-fluid">
-            <div class="row">
+            <div class="row container-1">
 
                 <div class="col-8 ">
                     <div class="info">
                         </h1>
                         <div class="media">
-                            <img class="align-self-center mr-3" src="img/cpp5.png"
-                                alt="Generic placeholder image">
+                            <div class="image">
+                                <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/codechef.jpg"
+                                alt="codechef">
+                                <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/hackerearth.jpeg"
+                                alt="hackerearth">
+                                <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/hackerrank.jpeg"
+                                alt="hackerrank">
+                                <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/leetcode.png"
+                                alt="leetcode">
+                                <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/Topcoder_Logo.jpg"
+                                alt="topcoder">
+                            </div>
                             <div class="media-body">
                                 <h1 class="mt-0">Competitive Programming</h1>
                                 <p>Competitive programming is a sport. You have to solve a problem with code that is
@@ -168,8 +259,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 second">
-                    <div class="title">
+                <div class="col-4 second first">
+                    <div class="title title-media">
                         <h1>Competitive Programming</h1>
                         <h2 class="title_text"> <i> “Make it work, make it right, make it fast.” </i> <br>– Kent Beck
                         </h2>
@@ -178,13 +269,13 @@
 
             </div>
         </div>
-
+        <hr class="line">
 
         <!---=====Section-1(CP)======-->
         <div class="container-sm-fluid">
-            <div class="row">
-                <div class="col-4 third">
-                    <div class="title">
+            <div class="row container-1">
+                <div class="col-4 third first">
+                    <div class="title title-media">
                         <h1>Open Source & fellowship</a></h1>
                         <h2 class="title_text"> <i> "It’s not a bug – it’s an undocumented feature." </i> <br> –
                             (Anonymous)
@@ -194,8 +285,18 @@
                 <div class="col-6 ">
                     <div class="info">
                         <div class="media">
-                            <img class="align-self-center mr-3" src="img/open-source.png"
-                                alt="Generic placeholder image">
+                            <div class="image">
+                                <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/hactoberfest.png"
+                                alt="c++">
+                                <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/mlh-fellowship-white.webp"
+                                alt="Java">
+                                <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/Outreachy.png"
+                                alt="c++">
+                                <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/The_Linux_Foundation_Logo.jpg"
+                                alt="c++">
+                                <img class="align-self-center mr-5 mp-5" src="/CodingHustlers/img/images logo/dsoc.jpeg"
+                                alt="c++">
+                            </div>
                             <div class="media-body">
                                 <h1 class="mt-4">Open Source & Fellowship</h1>
                                 <p>Open-source software is a type of computer software in which source code is released
@@ -217,14 +318,14 @@
             <section class="contacts" id="contact">
                 <div class="row"></div>
                     
-                    <div class="col-lg-4">
-                        <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    <div class="image-contact">
+                        <img class="bd-placeholder-img rounded-circle" width="240" height="240"
                             src="img/Satakshi Jain.jpg"> </img>
 
 
                         <h2>Satakshi Jain</h2>
                         
-                        <p><a class="btn btn-secondary"
+                        <p><a class="btn btn-secondary" style="border-radius: 0.753rem;"
                                 href="https://www.linkedin.com/in/satakshi-jain-6b9306203">Contact</a></p>
                     </div><!-- /.col-lg-4 -->
                 </div>
@@ -238,7 +339,7 @@
                     Chris Pine
                 </p>
 
-                <p>&#169; 2023 copyright all right reserved</p>
+                <p>&#169; 2024 copyright all right reserved</p>
                  <ul class="socials">
 
             <li><a href="https://github.com/Satakshijain/CodingHustlers" aria-label="Follow me on Github" title="Github (External Link)"
