@@ -26,17 +26,17 @@ a{
 .h2{
     background-color: var(-);
 }
-.nav{
+.navbar{
     
-    margin-right: 10rem;
+    /* margin-right: 10rem; */
     font-family: cursive;
     width: 100%;
     position: fixed;
     top: 0%;
     padding-top: 2px;
     z-index: 1;
-    background-color: var(--fourth-color);
-    box-shadow: 0 1px 4px rgba(146,161,176,.15);
+    /* background-color: var(--fourth-color);
+    box-shadow: 0 1px 4px rgba(146,161,176,.15); */
 
     
 }
