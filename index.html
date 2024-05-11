@@ -19,7 +19,7 @@
 <body>
     <!---=====Navbar======-->
 
-    <section class="nav justify-content-end ">
+    <!-- <section class="nav justify-content-end ">
         <li class="nav-item">
             <div class="nav-link"></div>
             <a class="logo" href="index.html">Coding Hustlers</a>
@@ -36,7 +36,22 @@
             <a class="nav-link" href="https://github.com/Satakshijain/CodingHustlers">Contibute</a>
         </li>
 
-    </section>
+    </section> -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Coding Hustlers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav flex-lg-grow-1 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-md-2">Home</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link px-md-2">Contact Us</a></li>
+                    <li class="nav-item"><a href="https://github.com/Satakshijain/CodingHustlers" class="nav-link px-md-2">Contribute</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!---=====Cover======--
     <div id="carouselExampleSlidesOnly" class="carousel-slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -64,10 +79,10 @@
 
         <div class="row">
 
-            <div class="col">
+            <div class="col-xs-12 col-md-6 col-xl-3">
                 <div class="title">
 
-                    <h1 class="button"> </a> Coding Hustlers </a></h1>
+                    <h1 class="button"> <a href="#"> Coding Hustlers </a></h1>
                     <p>Start your coding career with Coding Hustlers,
                         a platform which serves as an invaluable resource hub, offering a wide range of resouces related to basic programming, Competitive Programming and Open-Source Programs.
                        
@@ -77,24 +92,25 @@
 
             </div>
 
-            <div class="col">
+            <div class="col-sm-12 col-md-6 col-xl-3">
                 <div class="title">
 
-                    <h1 class="button"> </a> Basic Programming </a></h1>
+                    <h1 class="button"> <a href="#basic"> Basic Programming </a></h1>
+                    
                 </div>
 
             </div>
 
 
-            <div class="col ">
+            <div class="col-sm-12 col-md-6 col-xl-3 ">
                 <div class="title">
-                    <h1 class="button">Competitive Programming</h1>
+                    <h1 class="button"><a href="#competitive">Competitive Programming</a></h1>
                 </div>
             </div>
 
-            <div class="col ">
+            <div class="col-sm-12 col-md-6 col-xl-3 ">
                 <div class="title">
-                    <h1 class="button">Open Source and fellowship</h1>
+                    <h1 class="button"><a href="#open-source">Open Source and fellowship</a></h1>
                 </div>
             </div>
 
@@ -107,7 +123,7 @@
 
 
     <!---=====Section-1(Studies)======-->
-    <div class="container-sm-fluid">
+    <div class="container-sm-fluid" id="basic">
         <div class="row">
             <div class="col-4 first">
                 <div class="title">
@@ -117,7 +133,7 @@
                 </div>
 
             </div>
-            <div class="col-6 ">
+            <div class="col">
                 <div class="info">
                     </h1>
                     <div class="media">
@@ -142,7 +158,7 @@
 
 
         <!---=====Section-2(OS & FS)======-->
-        <div class="container-fluid">
+        <div class="container-fluid" id="competitive">
             <div class="row">
 
                 <div class="col-8 ">
@@ -181,7 +197,7 @@
 
 
         <!---=====Section-1(CP)======-->
-        <div class="container-sm-fluid">
+        <div class="container-sm-fluid" id="open-source">
             <div class="row">
                 <div class="col-4 third">
                     <div class="title">

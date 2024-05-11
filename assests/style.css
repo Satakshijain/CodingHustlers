@@ -18,23 +18,59 @@ body{
   }
 
 /* Navbar*/ 
+/* Navbar Underline Animation on Hover */
+.navbar-brand {
+    color: #fff !important; 
+    position: relative;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+    color: #0a0909 !important;
+}
+
+/* Remove these styles with ::after at end to remove effect */
+.navbar-brand::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.15rem;
+    width: 0;
+    background-color: #0a0909;
+    transition: all 0.3s;
+}
+
+.navbar-brand:hover::after {
+    width: 100%;
+}
+
+.navbar-brand:not(:hover)::after {
+    right: 0;
+    left: auto;
+}
+
 .nav-link{
     
     color: #fff !important ; 
-
+    margin: 5px 10px;
+    border-radius: 15px;
+    padding: 5px;
+    display: inline-block;
 }
+
 .nav-link:hover, .nav-link:active{
     color: #0a0909 !important;
+    background-color: #fff;
 }
-.nav{
-    
-    margin-top: 0;
-    margin-right: 10rem;
+.navbar{
+
     font-family: cursive;
     width: 100%;
     position: fixed;
     top: 0%;
-    padding-top: 2px;
+    padding: 5px 0;
     z-index: 1;
     background-color: var(--fourth-color);
     box-shadow: 0 1px 4px rgba(146,161,176,.15);
@@ -45,7 +81,7 @@ body{
     margin-bottom: .1rem;
     font-size: larger;
     margin-top: .1rem;
-
+    width: auto;
     
     
 }
@@ -56,6 +92,12 @@ body{
     font-size: larger;
     margin-top: 0rem;
 }
+
+.navbar button {
+    background-color: #fff;
+    /* Needs icon color fix */
+}
+
 /* box Sections*/ 
 .container{
     margin-top: .2rem;
@@ -76,7 +118,7 @@ body{
 
 }
 .row{
-    top: 0%;
+    
     margin-top: 0%;
     margin-bottom: 0%;
 
@@ -96,8 +138,14 @@ body{
     position: relative;
     cursor:cell;
   }
+
+.button > a{
+    text-decoration: none;
+    color: beige;
+    transition: color 0.2s;
+}
   
-.button:hover{
+.button > a:hover{
     color:  #e94560 ;
   }
 
