@@ -90,14 +90,31 @@ body{
 
 }
 
-
+.BacktoTop a i{
+    font-size: 20px;
+    padding: 14px;
+    color: black;
+}
+.BacktoTop{
+    background-color: #de2d4b;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    right: 0;
+    margin: 16px;
+    border-radius: 6px;
+    z-index: 10;
+}
 
 .button {
     position: relative;
     cursor:cell;
   }
-  
-.button:hover{
+  .button a{
+    color: white;
+    text-decoration: none;
+  }
+.button a:hover{
     color:  #e94560 ;
   }
 

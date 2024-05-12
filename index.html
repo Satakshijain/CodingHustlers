@@ -13,10 +13,12 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="assests/style.css">
     <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>CodePlan</title>
 </head>
 
 <body>
+    <div class="BacktoTop"><a href="#backtotop"><i class="fa-solid fa-arrow-up"></i></a></div>
     <!---=====Navbar======-->
 
     <section class="nav justify-content-end ">
@@ -57,7 +59,7 @@
 
 
     <!---=====Three boxes======-->
-    <div class="container-fluid main"
+    <div class="container-fluid main" id="backtotop"
         style="background-image: url(img/background.jpg); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; image-rendering: optimizeQuality;">
 
 
@@ -80,7 +82,7 @@
             <div class="col">
                 <div class="title">
 
-                    <h1 class="button"> </a> Basic Programming </a></h1>
+                    <h1 class="button"> <a href="#basic"> Basic Programming </a></h1>
                 </div>
 
             </div>
@@ -88,13 +90,13 @@
 
             <div class="col ">
                 <div class="title">
-                    <h1 class="button">Competitive Programming</h1>
+                    <h1 class="button"><a href="#cp">Competitive Programming</a></h1>
                 </div>
             </div>
 
             <div class="col ">
                 <div class="title">
-                    <h1 class="button">Open Source and fellowship</h1>
+                    <h1 class="button"><a href="#openSource">Open Source and fellowship</a></h1>
                 </div>
             </div>
 
@@ -117,7 +119,7 @@
                 </div>
 
             </div>
-            <div class="col-6 ">
+            <div class="col-6 " id="basic">
                 <div class="info">
                     </h1>
                     <div class="media">
@@ -145,7 +147,7 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-8 ">
+                <div class="col-8 " id="cp">
                     <div class="info">
                         </h1>
                         <div class="media">
@@ -181,7 +183,7 @@
 
 
         <!---=====Section-1(CP)======-->
-        <div class="container-sm-fluid">
+        <div class="container-sm-fluid" id="openSource">
             <div class="row">
                 <div class="col-4 third">
                     <div class="title">
