@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -12,56 +11,44 @@
     <link rel="stylesheet" href="/style (2).css">
     <title>Never stop learning</title>
 </head>
-
 <body>
-    <!---=====Navbar======-->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-end">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="mailto:amritanarang6@gmail.com">Contact US</a>
+            <a class="navbar-brand" href="#">Want to contribute?</a>
+        </div>
+    </nav>
 
-    <section class="nav justify-content-end ">
-
-        <li class="nav-item">
-            <a class="nav-link" style="color:white" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="mailto:amritanarang6@gmail.com">Contact US</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Want to <br> contribute?</a>
-        </li>
-
-    </section>
-
-    <!---=====Three boxes======-->
-    <div class="container-fluid">
+    <!-- Three boxes -->
+    <div class="container-fluid mt-4">
         <div class="row">
-            <div class="col first" >
-                <div class="title" style="color:white" >
-                    <h1> basic programming and important topics</h1>
+            <div class="col first">
+                <div class="title">
+                    <h1>Basic programming and important topics</h1>
                     <a href="C:\Users\91701\Downloads\studybasics.html" style="color:white">CLICK HERE FOR INFORMATION</a>
                 </div>
-
             </div>
-
-
             <div class="col second">
                 <div class="title">
-                    <h1>Competitative Programming</h1>
+                    <h1>Competitive Programming</h1>
                 </div>
             </div>
-
             <div class="col third">
                 <div class="title">
-                    <h1>Open Source and fellowship</h1>
+                    <h1>Open Source and Fellowship</h1>
                 </div>
             </div>
-
         </div>
     </div>
-    <!---=====Section-1(Studies)======-->
-    <div class="container-sm-fluid">
+
+    <!-- Studies Section -->
+    <div class="container-sm-fluid mt-4">
         <div class="row">
             <div class="col-4 first">
                 <div class="title">
-                    <h1> <a id="dep" href="#" style="color:white"> Basic Programming and Important topics </a></h1>
+                    <h1>Basic Programming and Important Topics</h1>
                 </div>
                 <div class="bullets">
                     <ul>benefits</ul>
@@ -69,7 +56,7 @@
                     <ul>other</ul>
                 </div>
             </div>
-            <div class="col-6 ">
+            <div class="col-6">
                 <h1 class="info_title">
 <pre class="info_title">
  Which is the best language
@@ -77,70 +64,82 @@
  What are the best courses to learn?
  Youtube vs paid courses
  NEVER MISS OUT ON INFO
-
 </pre>
+                </div>
             </div>
-
         </div>
     </div>
 
-
-    <!---=====Section-2(OS & FS)======-->
-    <div class="container-fluid">
+    <!-- Competitive Programming Section -->
+    <div class="container-fluid mt-4">
         <div class="row">
-
-            <div class="col-8 ">
-                <div class="info_title"><pre id="pree">
-
-                Programmer's Fav Game
-                CP is one of the  best exercise to
-                learn about ds and algo
-
-              </pre>
-
-
-               </div>
+            <div class="col-8">
+                <div class="info_title">
+                    <pre>
+Programmer's Fav Game
+CP is one of the  best exercise to
+learn about ds and algo
+                    </pre>
+                </div>
             </div>
             <div class="col-4 second">
                 <div class="title">
-                    <h1>Competitative Programming</h1>
+                    <h1>Competitive Programming</h1>
                 </div>
             </div>
-
         </div>
     </div>
 
-
-      <!---=====Section-1(CP)======-->
-      <div class="container-sm-fluid">
+    <!-- Open Source Section -->
+    <div class="container-sm-fluid mt-4">
         <div class="row">
             <div class="col-4 third">
                 <div class="title">
-                    <h1>open Source & fellowship</a></h1>
+                    <h1>Open Source & Fellowship</h1>
                 </div>
             </div>
-            <div class="col-6 ">
-                <div class="info"><pre id="pree">
-
-                info about the
-                open source
-                and fellow ships</pre> </div>
+            <div class="col-6">
+                <div class="info">
+                    <pre>
+info about the
+open source
+and fellowships
+                    </pre>
+                </div>
             </div>
-
         </div>
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- New Section with Tabs for Programming Languages -->
+    <div class="container mt-4">
+        <h2 class="text-center">Programming Languages</h2>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="java-tab" data-bs-toggle="tab" data-bs-target="#java" type="button" role="tab" aria-controls="java" aria-selected="true">Java</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="python-tab" data-bs-toggle="tab" data-bs-target="#python" type="button" role="tab" aria-controls="python" aria-selected="false">Python</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="javascript-tab" data-bs-toggle="tab" data-bs-target="#javascript" type="button" role="tab" aria-controls="javascript" aria-selected="false">JavaScript</button>
+            </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="java" role="tabpanel" aria-labelledby="java-tab">
+                <p>Java is a popular programming language...</p>
+            </div>
+            <div class="tab-pane fade" id="python" role="tabpanel" aria-labelledby="python-tab">
+                <p>Python is a versatile programming language...</p>
+            </div>
+            <div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="javascript-tab">
+                <p>JavaScript is the language of the web...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
 </body>
-
 </html>
