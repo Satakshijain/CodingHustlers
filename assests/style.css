@@ -16,46 +16,29 @@ body{
     --first-color: #0f3460;
     --fourth-color: #e94560;
   }
-
+  .highlight {
+    color: var(--first-color);
+  }
+  
 /* Navbar*/ 
-.nav-link{
-    
-    color: #fff !important ; 
+.navbar-custom {
+    background-color: #343a40;
+}
 
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
 }
-.nav-link:hover, .nav-link:active{
-    color: #0a0909 !important;
-}
-.nav{
-    
-    margin-top: 0;
-    margin-right: 10rem;
-    font-family: cursive;
-    width: 100%;
-    position: fixed;
-    top: 0%;
-    padding-top: 2px;
-    z-index: 1;
-    background-color: var(--fourth-color);
-    box-shadow: 0 1px 4px rgba(146,161,176,.15);
 
-    
+.navbar-custom .nav-link:hover {
+    background-color: #454d55;
+    text-decoration: none;
 }
-.nav-item{
-    margin-bottom: .1rem;
-    font-size: larger;
-    margin-top: .1rem;
 
-    
-    
-}
-.logo{
-    color: #fff !important;
-    margin-right: 60rem;
-    margin-bottom: 5rem;
-    font-size: larger;
-    margin-top: 0rem;
-}
 /* box Sections*/ 
 .container{
     margin-top: .2rem;
@@ -90,12 +73,12 @@ body{
 
 }
 
-
-
 .button {
-    position: relative;
-    cursor:cell;
-  }
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from the parent element, you can also set a specific color */
+}
+
+  
   
 .button:hover{
     color:  #e94560 ;
