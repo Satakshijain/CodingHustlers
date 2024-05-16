@@ -154,4 +154,42 @@ a{
     color: #fff;
     margin: 0 var(--mb-2)
   }
+
+
+/* Styling of cp raodmap container starts  */
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #e94560;
+}
+
+.table-container {
+    margin: 20px auto;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    color: #e94560;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f2f2f2;
+}
+/* Styling of cp raodmap container ends  */
   
