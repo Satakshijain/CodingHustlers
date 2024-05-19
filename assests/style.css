@@ -50,11 +50,12 @@ body{
     
 }
 .logo{
-    color: #fff !important;
     margin-right: 60rem;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     font-size: larger;
     margin-top: 0rem;
+    position: relative;
+    top: -10px;
 }
 /* box Sections*/ 
 .container{
