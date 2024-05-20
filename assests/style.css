@@ -90,14 +90,17 @@ body{
 
 }
 
+a{
+	text-decoration: none;
+	color: white;
+}
 
-
-.button {
+.button{
     position: relative;
     cursor:cell;
   }
   
-.button:hover{
+.button:hover, a:hover{
     color:  #e94560 ;
   }
 
