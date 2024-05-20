@@ -24,6 +24,9 @@
             <div class="nav-link"></div>
             <a class="logo" href="index.html">Coding Hustlers</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link " id="streakCount" href="index.html"> 🔥</a>
+        </li>
 
 
         <li class="nav-item">
@@ -252,6 +255,46 @@
           </ul>
             </footer>
             <!-- Optional JavaScript; choose one of the two! -->
+            <Script>// Function to update streak count
+                function updateStreak() {
+                    // Retrieve streak data from storage or initialize if not present
+                    let streakCount = localStorage.getItem('streakCount') || 0;
+                    let lastActivityDate = new Date(localStorage.getItem('lastActivityDate'));
+                
+                    // Get today's date
+                    const today = new Date();
+                
+                    // Check if the user visited yesterday
+                    if (
+                        lastActivityDate.getDate() === today.getDate() - 1 &&
+                        lastActivityDate.getMonth() === today.getMonth() &&
+                        lastActivityDate.getFullYear() === today.getFullYear()
+                    ) {
+                        // Increment streak count if activity was performed yesterday
+                        streakCount++;
+                    } else {
+                        // Reset streak count if activity was not performed yesterday
+                        streakCount = 1;
+                    }
+                
+                    // Update last activity date
+                    lastActivityDate = today;
+                
+                    // Update streak count on the UI
+                    document.getElementById('streakCount').textContent = `🔥: ${streakCount}`;
+                
+                    // Save streak data to storage
+                    localStorage.setItem('streakCount', streakCount);
+                    localStorage.setItem('lastActivityDate', lastActivityDate.toISOString());
+                }
+                
+                // Call updateStreak() function whenever the relevant activity is performed
+                // For example, if the user visits the website daily, call updateStreak() when the website is visited.
+                
+                // Initial call to update streak count when the page loads
+                updateStreak();
+                </Script>
+
 
             <!-- Option 1: Bootstrap Bundle with Popper -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
