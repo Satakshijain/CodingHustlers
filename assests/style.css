@@ -44,17 +44,41 @@ body{
 .nav-item{
     margin-bottom: .1rem;
     font-size: larger;
-    margin-top: .1rem;
+    margin-top: .7rem;
 
     
     
 }
+.logo-image{
+    height: 90px;
+    width:70px;
+    margin-bottom: 2rem;
+    
+
+}
+
 .logo{
     color: #fff !important;
     margin-right: 60rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     font-size: larger;
-    margin-top: 0rem;
+    margin-top: 3rem;
+}
+.logo-title
+{
+    color: #fff !important;
+    display:flex;
+    margin-left:3px;
+}
+.nav-item1{
+    margin-top: 3rem;
+    font-size: 1rem;
+    margin-top: .9rem;
+    display: inline;
+
+
+    
+    
 }
 /* box Sections*/ 
 .container{
