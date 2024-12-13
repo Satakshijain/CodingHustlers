@@ -223,3 +223,14 @@ body{
 .fa-linkedin-square:hover{
   color : rgb(0, 119, 181);
 }
+/* Scroll Bar */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background:#000000;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#6864e3,#da64e3)
+
+}
